@@ -7,7 +7,10 @@ LIC_FILES_CHKSUM = "file://COPYING;md5=d7810fab7487fb0aad327b76f1be7cd7"
 inherit kernel
 require recipes-kernel/linux/linux-dtb.inc
 
-RDEPENDS_kernel-base=""
+RDEPENDS_kernel-base += "kernel-devicetree"
+# We don't want to pollute /boot for builds using SD card as boot medium
+# as wic will automount the first VFAT partition on /boot
+RDEPENDS_kernel-base_at91-sd = ""
 FILESEXTRAPATHS_prepend := "${THISDIR}/${P}:"
 
 PV = "4.9+git${SRCPV}"
