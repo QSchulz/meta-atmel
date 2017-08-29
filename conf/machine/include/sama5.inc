@@ -11,6 +11,8 @@ PREFERRED_PROVIDER_virtual/bootloader_sama5 ?= "u-boot-at91"
 PREFERRED_PROVIDER_jpeg ?= "jpeg"
 PREFERRED_PROVIDER_jpeg-native ?= "jpeg-native"
 
+DTB_LOAD ?= "0x21000000"
+DTBO_LOAD ?= "0x20f00000"
 
 # used by sysvinit_2
 SERIAL_CONSOLE ?= "115200 ttyS0"
