@@ -6,6 +6,9 @@ require conf/machine/include/bootloaders.inc
 SOC_FAMILY = "at91sam9"
 
 PREFERRED_PROVIDER_virtual/kernel_at91sam9 ?= "linux-at91"
+KERNEL_IMAGETYPES += "fitImage"
+# Required by kernel-fitimage class
+PREFERRED_PROVIDER_u-boot_at91sam9 ?= "u-boot-at91"
 PREFERRED_PROVIDER_virtual/bootloader_at91sam9 ?= "u-boot-at91"
 
 DTB_LOAD ?= "0x21000000"
