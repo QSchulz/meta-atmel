@@ -4,7 +4,7 @@ SUMMARY = "Linux DT overlays for Atmel ARM SoCs (aka AT91)"
 LICENSE = "GPL-2.0 | MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=81fc48e2afd409019eebc15f6e8fc957"
 
-SRCREV = "37df36f29da7de6a02c9848612d82f52b81509fa"
+SRCREV = "77c7d7475d730b036f8d6e8a4cfb408529ff1247"
 SRC_URI = "git://github.com/QSchulz/dt-overlay-at91.git"
 
 DEPENDS = "dtc-native"
