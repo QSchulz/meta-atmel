@@ -20,7 +20,7 @@ PV = "4.9+git${SRCPV}"
 
 S = "${WORKDIR}/git"
 
-SRCREV = "4a905a876f7a155b8baa64ba8eb5c0822511c267"
+SRCREV = "08d2a97742978bbe99112672b3d8b48dfda97d34"
 
 KBRANCH = "linux-4.9-at91_dt-overlays"
 SRC_URI = "git://github.com/QSchulz/linux-at91.git;protocol=git;branch=${KBRANCH}"
